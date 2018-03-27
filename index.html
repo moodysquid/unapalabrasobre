@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Una Palabra Sobre</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+      
+    </header>
+
+    <main class="gradient-bckg">
+      
+      <div class="col col-right">
+        <div class="title">
+          <h1>Una Palabra</h1> 
+          <h2>Escribe una palabra</h2>
+          <h3>Sobre: <span class="topic"></span></h3>
+        </div>
+      </div>
+
+      <div class="col col-left">
+        <form id="word-form" class="word-form">
+          <input type="text" class="input-word rounded-left" name="word" autocomplete="off" placeholder="Sólo una palabra..." />
+          <input type="hidden" name="topic" value="">
+          <input type="submit" class="rounded-right" value="GO!" />
+        </form>
+      
+        <div class="all-words">
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+      <p class="position"></p>
+    </footer>
+  <script src="jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

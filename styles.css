@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* box size will be specified from border to border */
+}
+
+html {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+  font-size: 13px;
+}
+
+body{
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid red;
+}
+
+header, main, section, footer {
+  text-align:center;
+}
+
+h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: -2.8rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: -1.6rem;
+}
+
+main {
+  height: 100%;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+form input[type=submit]{
+  -webkit-appearance: none; /* creo que no funciona, tuve que borrarlos manualmente abajo */
+}
+
+.gradient-bckg {
+  background: #30bab6;
+  background: -webkit-linear-gradient(top, #009efd, #2af598);
+  background: -o-linear-gradient(top, #009efd, #2af598);
+  background: -moz-linear-gradient(top, #009efd, #2af598);
+  background: linear-gradient(top, #009efd, #2af598);
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.rounded {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.rounded-left {
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.rounded-right {
+  -webkit-border-top-right-radius: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+  -moz-border-radius-topright: 20px;
+  -moz-border-radius-bottomright: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.col {
+  width: 50%;
+  height: 100%;
+  float: left;
+  border: 1px solid white;
+}
+
+.col-left {
+  position: relative;
+}
+
+.title {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-top: -5em;
+  margin-left: -20em;
+  width: 40em;
+  height: 10em;
+  border: 1px solid blue;
+}
+
+.col-right {
+  position: relative;
+}
+
+.word-form{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-top: -2.5em;
+  margin-left: -20em;
+  width: 40em;
+  height: 5em;
+  border: 1px solid blue;
+}
+
+.word-form input {
+  font-size: 1.5em;
+  height: 100%;
+  line-height: 10%;
+  float: left;
+}
+
+.word-form input[type=text] {
+  padding: 0% 10% 0% 10%;
+  width: 70%;
+  font-family: 'Poppins', sans-serif; /* No tomaba el del tag html (?). Tomaba Arial del navegador */  
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: 1px solid #fff;
+}
+
+.word-form input[type=submit] {
+  width: 30%;
+  border-style: none;
+  border-width: 0px;
+  border-image: none;
+  font-family: 'Poppins', sans-serif; /* No tomaba el del tag html (?). Tomaba Arial del navegador */  
+  color: #fff;
+  border: 1px solid 2af598;
+  background-color: #2af598;
+}
+
+.all-words {
+  visibility: hidden;
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.top{
+  margin-top: 50px;
+  /*border-top: 1px solid #000;*/
+}
+
+.little-box{
+  display: inline-block;
+  padding: 5px 15px;
+  margin: 2px 1px;
+  font-size: 1.3em;
+}
